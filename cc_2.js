@@ -6,8 +6,15 @@ console.log ('The bill was',bill,'the tip was', tip, 'and the total value is', b
 function calculateTip(bill) {
     return bill> 300|| bill< 50? bill*0.2: bill*0.15;
 } // the tip is calculated according to the bill in the same way as earlier, however a function is created that allows users to inpit the bill amount
-const billValue= 100;
+let billValue= 100;
 let tipAmount= calculateTip(billValue);// this assigns the function to the variable
 
 console.log ('The tip is',tipAmount)
+
+let bills = [275,40,430];
+let bills2 = [125,555,44];
+let tips= bills.map(calculateTip);
+let tips2= bills2.map(calculateTip);// constructed arrays bills, bills2, tips and tips2 based on the provided data
+let totals= bills.map((bill,i)=> bill+tips [i]);
+let totals2= bills2.map((bill,i)=> bill+tips2 [i]);//creating arrays totals and totals that adds the values of bills and tips. Using i is what allows us to move from the first value to the next and so on.
 
