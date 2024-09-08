@@ -18,3 +18,5 @@ let tips2= bills2.map(calculateTip);// constructed arrays bills, bills2, tips an
 let totals= bills.map((bill,i)=> bill+tips [i]);
 let totals2= bills2.map((bill,i)=> bill+tips2 [i]);//creating arrays totals and totals that adds the values of bills and tips. Using i is what allows us to move from the first value to the next and so on.
 
+console.log (totals)
+console.log (totals2)
