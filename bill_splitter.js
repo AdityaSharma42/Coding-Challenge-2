@@ -16,7 +16,7 @@ let bills2 = [125,555,44];
 let tips= bills.map(calculateTip);
 let tips2= bills2.map(calculateTip);// constructed arrays bills, bills2, tips and tips2 based on the provided data
 let totals= bills.map((bill,i)=> bill+tips [i]);
-let totals2= bills2.map((bill,i)=> bill+tips2 [i]);//creating arrays totals and totals2 that adds the values of bills and tips. Using i is what allows us to move from the first values to the next and so on.
+let totals2= bills2.map((bill,i)=> bill+tips2 [i]);//creating arrays totals and totals that adds the values of bills and tips. Using i is what allows us to move from the first value to the next and so on.
 
 console.log ('The total amounts from the first data set are:',totals);
 console.log ('The total amounts from the second data set are:',totals2);
